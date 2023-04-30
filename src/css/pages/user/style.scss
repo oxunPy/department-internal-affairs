@@ -1,0 +1,30 @@
+@import "../../assets/main-color/color";
+
+.top-100 {
+  padding-top: 70px;
+}
+.user__items{
+  display: flex;
+  align-items:flex-start;
+}
+.modal-btn{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.add__user--btn{
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  background-color:$main-color3;
+  border:1px solid $main-color1;
+  color:$main-color2;  
+  font-size: 16px; 
+  border-radius:4px;
+  transition: ease .8s;
+  cursor: pointer;
+  &:hover{
+      background-color:$main-color2;
+      color:$main-color3;
+  }
+}

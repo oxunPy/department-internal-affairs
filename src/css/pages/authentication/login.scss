@@ -1,0 +1,106 @@
+@import "../../assets/main-color/_color.scss";
+
+
+.login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.text-center{
+    color: $main-color1;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 30px;
+    display: block;
+}
+.box{
+    width: 422px;
+    text-align: center;
+    padding: 20px;
+    
+}
+.input-container{
+    margin-bottom: 1rem;
+    & input{
+        padding: 12px 25px;
+        height: auto;
+        border-radius: 25px;
+        border: 2px solid #e8e8e8;
+        font-size: 13px;
+        font-weight: 700;
+        color: #5c6662;
+        width: 100%;
+        // outline: none;
+        &:focus{
+            border-color: rgba(95,208,165,.6);
+            box-shadow: 0 0 0 0.2rem rgb(95 208 165 / 25%);
+            color: #495057;
+            background-color: #fff;
+            outline: 0;
+        }
+    }
+}
+.btn{
+    
+    border-radius: inherit;
+    font-weight: 700;
+    padding: 9px 24px;
+    border-radius: 7px;
+    line-height: 22px;
+    border: none;
+    font-size: 13px;
+    color: #fff;
+    background: linear-gradient(180deg,$main-color1,$main-color3 100%);
+    margin-top: 30px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    &::before{
+        border-radius: inherit;
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(90deg,$main-color1,$main-color3 100%);
+        z-index: -1;
+        transition: all .2s ease-in-out;
+        opacity: 0;
+    }
+    &:hover::before{
+        opacity: 0.4;
+        z-index: 11;
+    }
+}
+
+.auth-options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    margin-top: 25px;
+    &__items{
+        display: flex;
+        align-items:center;
+    }
+}
+.forgot-link{
+    // margin-right: 25px;
+    color: #5fd0a5;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+}
+.custom-control-label{
+    font-size: 13px;
+    font-weight: 400;
+    color: #7d7d83;
+    line-height: 1.6;
+    margin-left: 10px;
+}

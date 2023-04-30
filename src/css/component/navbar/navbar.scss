@@ -1,0 +1,114 @@
+@import "../../assets/main-color/color";
+
+.header {
+  background-color: $main-color1;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.nav-link {
+  text-decoration: none;
+  color: $main-color2;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80%;
+  text-align: right;
+  list-style: none;
+}
+.nav-item {
+  &:last-child {
+    margin-right: 0;
+  }
+  &:nth-child(3) {
+    position: relative;
+    display: inline-block;
+  }
+  &__link {
+    padding: 10px 20px;
+    transition: ease-out 0.3s;
+    text-decoration: none;
+    color: $main-color2;
+    &:hover {
+      background-color: $main-color2;
+      color: $main-color1;
+      border-radius: 5px;
+    }
+  }
+}
+.nav__btn {
+  border: none;
+  outline: none;
+  background-color: $main-color2;
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: ease-out 0.5s;
+}
+
+.nav__btn:hover {
+  // background-color: $main-color3;
+  color: $main-color1;
+}
+.dropdown {
+  display: block;
+}
+.dropdown__items {
+  width: 150px;
+  background-color: $main-color3;
+  padding: 6px 20px;
+  list-style: none;
+  position: absolute;
+  top: 50px;
+  left: -27px;
+}
+.dropdown__item {
+  text-align: center;
+  margin-bottom: 10px;
+
+  &--link {
+    display: inline-block;
+    width: 100%;
+    color: $main-color2;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  // top: 0;
+  width: 200px;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+  background-color: $main-color2;
+  // top: -5px;
+  transform: translateY(10px);
+  text-align: start;
+}
+.nav-item:nth-child(2):hover .dropdown-content {
+  display: block;
+}
+.dropdown-content .dropdown-content__item {
+  display: block;
+  color: $main-color1;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.dropdown-content .dropdown-content__item:hover {
+  color: $main-color2;
+  background-color: $main-color1;
+}

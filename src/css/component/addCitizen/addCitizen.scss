@@ -1,0 +1,70 @@
+@import "../../assets/main-color/_color.scss";
+.section--add__users{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.section--add__box{
+    width: 100%;
+    background-color:$main-color3;
+    padding: 30px 70px;
+    border-radius: 8px;
+}
+.form__item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    & label{
+        color: $main-color2;
+        margin-bottom: 10px;
+    }
+    & input{
+        border: none;
+        outline: none;
+        padding: 10px 16px;
+        background-color:$main-color3;
+        border:1px solid $main-color1;
+        color:$main-color2;  
+        font-size: 16px; 
+        border-radius:4px;
+        &::placeholder{
+            color:$main-color2;
+        }     
+    }
+    &--select{
+        border: none;
+        outline: none;
+        padding: 10px 16px;
+        background-color:$main-color3;
+        border:1px solid $main-color1;
+        color:$main-color2;  
+        font-size: 16px; 
+        border-radius:4px;
+    }
+    &--btn{
+        border: none;
+        outline: none;
+        padding: 10px 16px;
+        background-color:$main-color3;
+        border:1px solid $main-color1;
+        color:$main-color2;  
+        font-size: 16px; 
+        border-radius:4px;
+        transition: ease .8s;
+        cursor: pointer;
+        &:hover{
+            background-color:$main-color2;
+            color:$main-color3;
+        }
+    }
+
+}
+.close-btn{
+    color:$main-color2;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
