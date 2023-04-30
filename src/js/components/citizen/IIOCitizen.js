@@ -161,6 +161,6 @@ const IIOCitizen = () => {
             sortDirections: ['descend', 'ascend'],
         },
     ];
-    return <Table columns={columns} dataSource={data}/>;
+    return <Table style={{width: "90%"}} columns={columns} dataSource={data}/>;
 }
 export default IIOCitizen;
