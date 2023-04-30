@@ -38,8 +38,8 @@ function App() {
           <Route path="editor" element={<Editor />} />
         </Route>
 
-        <Route element={<RequireAuth allowedRoles={[ROLES[1], ROLES[0]]} />}>
-          <Route path="iiocitizen" element={<IIOCitizen />} />
+        <Route element={<RequireAuth allowedRoles={[ROLES[1]]} />}>
+          <Route path="iiocitizen" element={<IIOCitizen/>} />
         </Route>
 
         <Route element={<RequireAuth allowedRoles={[ROLES[1]]} />}>

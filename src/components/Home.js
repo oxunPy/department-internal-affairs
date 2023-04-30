@@ -21,9 +21,8 @@ const Home = () => {
             <br />
             <Link to="/editor">Go to the Editor page</Link>
             <br />
-            <br>
             <Link to="/iiocitizen">Go to the iiocitizen</Link>
-            </br>
+            <br />
             <Link to="/admin">Go to the Admin page</Link>
             <br />
             <Link to="/lounge">Go to the Lounge</Link>
@@ -36,4 +35,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;
