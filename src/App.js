@@ -8,6 +8,8 @@ import Missing from './components/Missing';
 import Unauthorized from './components/Unauthorized';
 import Lounge from './components/Lounge';
 import LinkPage from './components/LinkPage';
+import IIOCitizen from './components/IIOCitizen';
+
 import RequireAuth from './components/RequireAuth';
 import { Routes, Route } from 'react-router-dom';
 
@@ -36,6 +38,9 @@ function App() {
           <Route path="editor" element={<Editor />} />
         </Route>
 
+        <Route element={<RequireAuth allowedRoles={[ROLES[1], ROLES[0]]} />}>
+          <Route path="iiocitizen" element={<IIOCitizen />} />
+        </Route>
 
         <Route element={<RequireAuth allowedRoles={[ROLES[1]]} />}>
           <Route path="admin" element={<Admin />} />
