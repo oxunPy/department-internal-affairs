@@ -8,7 +8,7 @@ import Missing from './components/Missing';
 import Unauthorized from './components/Unauthorized';
 import Lounge from './components/Lounge';
 import LinkPage from './components/LinkPage';
-import IIOCitizen from './components/IIOCitizen';
+import IIOCitizen from './components/citizen/IIOCitizen';
 
 import RequireAuth from './components/RequireAuth';
 import { Routes, Route } from 'react-router-dom';
